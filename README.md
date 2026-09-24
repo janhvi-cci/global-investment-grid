@@ -41,11 +41,30 @@ A comprehensive frontend-only investment opportunity discovery portal.
 
 ```
 gig-website/
-├── index.html       # Main HTML file (all content)
-├── style.css        # Complete stylesheet
-├── script.js        # All JavaScript functionality
-├── world-map-data.js # SVG country outlines for the interactive world map
-└── README.md        # This file
+├── index.html                    # Homepage (Overview, Hero Search, World Map & Portal Gateway)
+├── investment-opportunities.html # Dedicated Investment Opportunities Discovery & Multi-Parameter Filter Page
+├── countries.html                # Geographical Gateway & Continents Explorer
+├── asia.html                     # Asia Continent Page & Interactive Map
+├── europe.html                   # Europe Continent Page & Interactive Map
+├── africa.html                   # Africa Continent Page & Interactive Map
+├── north-america.html            # North America Continent Page & Interactive Map
+├── south-america.html            # South America Continent Page & Interactive Map
+├── oceania.html                  # Oceania Continent Page & Interactive Map
+├── country.html                  # Dynamic Country Detail Page (?country=...)
+├── sectors.html                  # 16 Strategic Investment Sectors Directory
+├── sector.html                   # Dynamic Sector Detail Page (?sector=...)
+├── investor-connect.html         # Bilateral Matchmaking for Investors & Project Promoters
+├── resources.html                # Institutional Resources, Policy Briefs & IPA Directory
+├── news.html                     # News & Market Intelligence Dispatches
+├── news-detail.html              # Dynamic News Article Reader (?id=...)
+├── about.html                    # About GIG Institutional Mission & Architecture
+├── project.html                  # Standardized Project Detail Dossier (?id=...)
+│
+├── data.js                       # Centralized Single Source of Truth Data Store
+├── world-map-data.js             # SVG Map Geometries & Continent ViewBoxes
+├── main.js                       # Core Multi-Page Controller, Router & Modals
+├── style.css                     # Complete Government/Institutional Stylesheet
+└── README.md                     # Documentation
 ```
 
 ### Technology Stack

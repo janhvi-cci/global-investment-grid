@@ -25,6 +25,60 @@ const WORLD_MAP = {
         "Indonesia": "M451.4 271.1 452.1 272.6 454.4 273.6 456.4 272.6 454.4 271.1ZM498.4 264.4 494.4 267.6 495.1 268.6 497.4 268.9 500.1 271.6 500.1 273.4 502.6 274.6 503.9 273.4 503.9 266.6 501.4 265.1 499.6 265.1ZM472.6 263.4 471.6 263.9 470.4 266.4 471.4 267.6 473.4 266.9 474.6 265.6ZM467.4 255.4 465.1 257.4 463.4 260.1 457.6 260.1 456.6 260.9 456.1 262.4 459.6 266.9 463.4 266.9 464.6 267.9 466.4 267.1 467.9 262.6 469.9 260.4 469.9 259.6 467.9 257.4 467.9 255.9ZM437.6 254.1 437.1 254.6 437.4 255.9 440.1 258.6 441.1 261.4 444.1 264.6 444.1 265.4 448.9 270.4 450.9 270.9 450.9 268.6 451.9 266.6 448.9 264.6 447.9 263.4 447.9 261.6 446.4 260.1 443.6 259.1 438.9 254.4Z",
         "Vietnam": "M451.9 235.9 450.1 237.4 450.1 238.6 452.4 240.9 453.9 241.6 453.9 242.6 451.4 245.1 451.4 245.9 452.1 246.6 452.9 246.6 454.6 245.9 455.9 244.6 455.9 239.4 452.6 236.1ZM447.4 227.1 446.4 228.1 446.4 228.9 448.9 231.4 449.1 232.6 450.4 233.9 451.6 234.4 451.1 233.9 451.1 232.4 453.6 229.9 453.6 229.1 450.9 226.4 450.1 226.4 448.9 227.1Z"
     },
-    // Singapore is too small to trace from the image, so it is drawn as a marker
-    markers: { "Singapore": { x: 450.4, y: 247.8, r: 1.9 } }
+    // Markers for small countries and key economic centers
+    markers: {
+        "Singapore": { x: 450.4, y: 247.8, r: 2.2 },
+        "South Korea": { x: 485.0, y: 198.0, r: 2.5 },
+        "United States": { x: 135.0, y: 195.0, r: 6.0 },
+        "Italy": { x: 316.0, y: 192.0, r: 2.8 },
+        "Spain": { x: 284.0, y: 194.0, r: 3.2 },
+        "Egypt": { x: 342.0, y: 215.0, r: 3.5 },
+        "New Zealand": { x: 546.0, y: 330.0, r: 2.8 }
+    }
 };
+
+/* Continent-specific map viewpoints and country lists */
+const CONTINENT_MAPS = {
+    "asia": {
+        id: "asia",
+        name: "Asia",
+        viewBox: "320 160 215 130",
+        countries: ["India", "United Arab Emirates", "Saudi Arabia", "Singapore", "Japan", "Vietnam", "Indonesia", "South Korea"]
+    },
+    "europe": {
+        id: "europe",
+        name: "Europe",
+        viewBox: "265 140 85 65",
+        countries: ["Germany", "France", "United Kingdom", "Italy", "Spain"]
+    },
+    "africa": {
+        id: "africa",
+        name: "Africa",
+        viewBox: "265 195 105 130",
+        countries: ["South Africa", "Kenya", "Egypt"]
+    },
+    "north-america": {
+        id: "north-america",
+        name: "North America",
+        viewBox: "55 90 170 120",
+        countries: ["Canada", "United States"]
+    },
+    "south-america": {
+        id: "south-america",
+        name: "South America",
+        viewBox: "165 235 90 125",
+        countries: ["Brazil"]
+    },
+    "oceania": {
+        id: "oceania",
+        name: "Oceania",
+        viewBox: "445 260 115 85",
+        countries: ["Australia", "New Zealand"]
+    }
+};
+
+if (typeof window !== 'undefined') {
+    window.WORLD_MAP = WORLD_MAP;
+    window.CONTINENT_MAPS = CONTINENT_MAPS;
+}
+

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Country investment profile, regulatory framework, key sectors, and active investment opportunities on the Global Investment Grid.">
+    <title>Country Profile - Global Investment Grid (GIG)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Utility Bar -->
+    <div class="utility-bar">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span>Official Investment Opportunity Portal</span>
+            </div>
+            <div class="utility-right">
+                <button type="button" class="utility-link" aria-label="Accessibility">Accessibility</button>
+                <button type="button" class="utility-link" aria-label="Sitemap">Sitemap</button>
+                <button type="button" class="utility-link" aria-label="Contact Us">Contact Us</button>
+                <div class="language-selector">
+                    <select aria-label="Select Language">
+                        <option>English</option>
+                        <option>हिन्दी</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-section" style="text-decoration:none;">
+                <div class="logo">GIG</div>
+                <div class="logo-text">
+                    <h1>GLOBAL INVESTMENT GRID</h1>
+                    <p>Global Investment Opportunities Platform</p>
+                </div>
+            </a>
+            <div class="header-actions">
+                <button type="button" class="btn-secondary" id="login-btn">Investor Login</button>
+                <button type="button" class="btn-primary" id="register-btn">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <div class="nav-container">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li class="nav-dropdown">
+                    <a href="investment-opportunities.html" class="nav-link">INVESTMENT OPPORTUNITIES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="investment-opportunities.html" class="dropdown-link">All Opportunities</a></li>
+                        <li><a href="investment-opportunities.html?stage=Planning" class="dropdown-link">Planning Stage</a></li>
+                        <li><a href="investment-opportunities.html?type=Greenfield" class="dropdown-link">Greenfield Projects</a></li>
+                        <li><a href="investment-opportunities.html?type=Brownfield" class="dropdown-link">Brownfield Projects</a></li>
+                        <li><a href="investment-opportunities.html?type=PPP" class="dropdown-link">PPP Projects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="countries.html" class="nav-link active">COUNTRIES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="countries.html" class="dropdown-link">All Continents</a></li>
+                        <li><a href="asia.html" class="dropdown-link">Asia</a></li>
+                        <li><a href="europe.html" class="dropdown-link">Europe</a></li>
+                        <li><a href="africa.html" class="dropdown-link">Africa</a></li>
+                        <li><a href="north-america.html" class="dropdown-link">North America</a></li>
+                        <li><a href="south-america.html" class="dropdown-link">South America</a></li>
+                        <li><a href="oceania.html" class="dropdown-link">Oceania</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="sectors.html" class="nav-link">SECTORS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sectors.html" class="dropdown-link">All 16 Sectors</a></li>
+                        <li><a href="sector.html?sector=infrastructure" class="dropdown-link">Infrastructure</a></li>
+                        <li><a href="sector.html?sector=renewable-energy" class="dropdown-link">Renewable Energy</a></li>
+                        <li><a href="sector.html?sector=manufacturing" class="dropdown-link">Manufacturing</a></li>
+                        <li><a href="sector.html?sector=technology" class="dropdown-link">Technology</a></li>
+                        <li><a href="sector.html?sector=healthcare" class="dropdown-link">Healthcare</a></li>
+                        <li><a href="sector.html?sector=green-hydrogen" class="dropdown-link">Green Hydrogen</a></li>
+                        <li><a href="sector.html?sector=ev-mobility" class="dropdown-link">EV & Mobility</a></li>
+                    </ul>
+                </li>
+                <li><a href="investor-connect.html" class="nav-link">INVESTOR CONNECT</a></li>
+                <li><a href="resources.html" class="nav-link">RESOURCES</a></li>
+                <li><a href="news.html" class="nav-link">NEWS & UPDATES</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT GIG</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-section">
+            <div class="container">
+                <a href="index.html" class="breadcrumb">Home</a> &gt;
+                <a href="countries.html" class="breadcrumb">Countries</a> &gt;
+                <span id="breadcrumb-country" style="color:#666;">Country Profile</span>
+            </div>
+        </div>
+
+        <!-- Prototype Notice -->
+        <div class="prototype-notice">
+            <div class="container">
+                <strong>Prototype / Demonstration Portal:</strong> Economic statistics, project parameters and regulatory descriptions shown are illustrative prototype data.
+            </div>
+        </div>
+
+        <!-- Inner Hero -->
+        <section class="inner-hero">
+            <div class="container">
+                <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:16px;">
+                    <div>
+                        <div style="display:inline-block; background:rgba(255,255,255,0.15); padding:3px 10px; border-radius:3px; font-size:11px; font-weight:bold; margin-bottom:8px; text-transform:uppercase;">
+                            Continent: <a href="countries.html" id="country-continent" style="color:#FFF; text-decoration:underline;">Asia</a>
+                        </div>
+                        <h1 id="country-name" style="font-size:32px;">COUNTRY PROFILE</h1>
+                        <p class="hero-subtitle">Investment Environment, Key Sectors & Pipeline Opportunities</p>
+                    </div>
+                    <div style="display:flex; gap:10px;">
+                        <a href="#" id="country-explore-opps-btn" class="btn-primary" style="text-decoration:none; padding:12px 20px;">EXPLORE OPPORTUNITIES &rarr;</a>
+                        <button type="button" class="btn-secondary" id="country-express-interest-btn" style="padding:12px 20px;">EXPRESS INTEREST</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Profile Content -->
+        <section class="page-section-gray">
+            <div class="container">
+                <!-- Key Economic Metrics -->
+                <div class="key-metric-strip">
+                    <div class="metric-box">
+                        <div class="label">Capital City</div>
+                        <div class="val" id="country-capital">&mdash;</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="label">Currency</div>
+                        <div class="val" id="country-currency">&mdash;</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="label">Annual FDI Inflow</div>
+                        <div class="val" id="country-fdi">&mdash;</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="label">Annual GDP Growth</div>
+                        <div class="val" id="country-gdp">&mdash;</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="label">Listed Opportunities</div>
+                        <div class="val" id="country-opp-count">0</div>
+                    </div>
+                </div>
+
+                <div class="country-profile-grid">
+                    <!-- Left Main Column -->
+                    <div>
+                        <!-- Overview -->
+                        <div class="profile-card">
+                            <h3>Country Overview & Investment Thesis</h3>
+                            <p id="country-overview" style="font-size:14px; line-height:1.7; color:#333; margin-bottom:16px;">
+                                Loading overview...
+                            </p>
+                        </div>
+
+                        <!-- Investment Environment -->
+                        <div class="profile-card">
+                            <h3>Investment Environment & Regulatory Framework</h3>
+                            <p id="country-environment" style="font-size:14px; line-height:1.7; color:#333; margin-bottom:16px;">
+                                Loading regulatory framework...
+                            </p>
+                            <div style="background:#F0F2F5; padding:14px; border-radius:3px; font-size:12px; border-left:3px solid #1D5FA7;">
+                                <strong>Liaison Support:</strong> Direct statutory clearing and single-window facilitation are coordinated via national investment promotion agencies.
+                            </div>
+                        </div>
+
+                        <!-- Sample Projects in Country -->
+                        <div class="profile-card">
+                            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid #E8ECEF; padding-bottom:10px; margin-bottom:16px;">
+                                <h3 style="margin:0; border:none; padding:0;">Available Investment Opportunities</h3>
+                                <span style="font-size:12px; color:#666;">Illustrative Projects</span>
+                            </div>
+                            <div class="projects-grid" id="country-projects-grid">
+                                <!-- Populated dynamically by main.js -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Sidebar Column -->
+                    <div>
+                        <!-- Key Sectors -->
+                        <div class="profile-card">
+                            <h3>Key Investment Sectors</h3>
+                            <div class="theme-pill-list" id="country-sectors">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+
+                        <!-- Investment Themes -->
+                        <div class="profile-card">
+                            <h3>National Investment Themes</h3>
+                            <div class="theme-pill-list" id="country-themes">
+                                <!-- Populated by JS -->
+                            </div>
+                        </div>
+
+                        <!-- Related Resources & Guides -->
+                        <div class="profile-card">
+                            <h3>Related Resources & Guides</h3>
+                            <ul style="list-style:none; padding:0; margin:0; font-size:12px;">
+                                <li style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #F0F2F5;">
+                                    <a href="resources.html" style="color:#1D5FA7; text-decoration:none; font-weight:bold; display:block; margin-bottom:2px;">
+                                        Comprehensive National Investor Guide
+                                    </a>
+                                    <span style="color:#777;">PDF Handbook &bull; GIG Policy Library</span>
+                                </li>
+                                <li style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #F0F2F5;">
+                                    <a href="resources.html" style="color:#1D5FA7; text-decoration:none; font-weight:bold; display:block; margin-bottom:2px;">
+                                        FDI Screening & Foreign Ownership Brief
+                                    </a>
+                                    <span style="color:#777;">Regulatory Overview &bull; GIG Advisory</span>
+                                </li>
+                                <li style="margin-bottom:6px;">
+                                    <a href="resources.html" style="color:#1D5FA7; text-decoration:none; font-weight:bold; display:block; margin-bottom:2px;">
+                                        Investment Promotion Agency (IPA) Directory
+                                    </a>
+                                    <span style="color:#777;">Official Statutory Contacts</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>GLOBAL INVESTMENT GRID</h4>
+                <ul>
+                    <li><a href="about.html">About GIG</a></li>
+                    <li><a href="investor-connect.html">Investor Connect</a></li>
+                    <li><a href="investment-opportunities.html">Opportunities Directory</a></li>
+                    <li><a href="countries.html">Global Markets</a></li>
+                    <li><a href="javascript:void(0)" class="utility-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal & Governance</h4>
+                <ul>
+                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)">Terms of Use</a></li>
+                    <li><a href="javascript:void(0)">Disclaimer</a></li>
+                    <li><a href="javascript:void(0)">Accessibility Statement</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Institutional Links</h4>
+                <ul>
+                    <li><a href="resources.html">Government Agencies Directory</a></li>
+                    <li><a href="resources.html">Investment Promotion Agencies</a></li>
+                    <li><a href="resources.html">Development Finance Institutions</a></li>
+                    <li><a href="news.html">Market Intelligence & News</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Global Investment Grid. Prototype / Demonstration Portal.</p>
+            <p>This website is a frontend demonstration. Investment opportunities, statistics and project information shown are illustrative prototype data unless otherwise stated.</p>
+        </div>
+    </footer>
+
+    <!-- Express Interest Modal -->
+    <div class="modal" id="interest-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2>Express Interest in Market / Project</h2>
+            <form id="interest-form">
+                <div class="form-group">
+                    <label for="interest-name">Full Name *</label>
+                    <input type="text" id="interest-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-org">Organization *</label>
+                    <input type="text" id="interest-org" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-country">Country of Incorporation *</label>
+                    <input type="text" id="interest-country" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-email">Corporate Email *</label>
+                    <input type="email" id="interest-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-investment">Investment Interest Type *</label>
+                    <input type="text" id="interest-investment" placeholder="e.g., Equity Co-Investment, Debt, EPC Partnership" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-message">Message / Statement of Qualifications</label>
+                    <textarea id="interest-message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">SUBMIT INTEREST</button>
+            </form>
+            <div id="interest-success" class="success-message" style="display:none; padding:20px; background:#E6F2EC; border-left:4px solid #2E7D5B; margin-top:16px;">
+                <p><strong>Thank you!</strong> Your expression of interest has been recorded in this demonstration portal.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="data.js"></script>
+    <script src="world-map-data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
