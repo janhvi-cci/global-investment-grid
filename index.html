@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Global Investment Grid - Connecting Global Capital with Global Opportunities">
+    <title>Global Investment Grid (GIG) - Investment Opportunities Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Skip to main content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Utility Bar -->
+    <div class="utility-bar">
+        <div class="utility-container">
+            <div class="utility-left">
+                <span>Official Investment Opportunity Portal</span>
+            </div>
+            <div class="utility-right">
+                <button class="utility-link" aria-label="Accessibility">Accessibility</button>
+                <button class="utility-link" aria-label="Sitemap">Sitemap</button>
+                <button class="utility-link" aria-label="Contact Us">Contact Us</button>
+                <div class="language-selector">
+                    <select aria-label="Select Language">
+                        <option>English</option>
+                        <option>हिन्दी</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-section">
+                <div class="logo">GIG</div>
+                <div class="logo-text">
+                    <h1>GLOBAL INVESTMENT GRID</h1>
+                    <p>Global Investment Opportunities Platform</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="btn-secondary" id="login-btn">Investor Login</button>
+                <button class="btn-primary" id="register-btn">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="main-nav" role="navigation">
+        <div class="nav-container">
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">INVESTMENT OPPORTUNITIES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-link" data-filter="all">All Opportunities</a></li>
+                        <li><a href="#" class="dropdown-link" data-filter="featured">Featured Projects</a></li>
+                        <li><a href="#" class="dropdown-link" data-filter="greenfield">Greenfield Projects</a></li>
+                        <li><a href="#" class="dropdown-link" data-filter="brownfield">Brownfield Projects</a></li>
+                        <li><a href="#" class="dropdown-link" data-filter="ppp">PPP Projects</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">COUNTRIES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-link">Asia</a></li>
+                        <li><a href="#" class="dropdown-link">Europe</a></li>
+                        <li><a href="#" class="dropdown-link">Middle East</a></li>
+                        <li><a href="#" class="dropdown-link">Africa</a></li>
+                        <li><a href="#" class="dropdown-link">North America</a></li>
+                        <li><a href="#" class="dropdown-link">South America</a></li>
+                        <li><a href="#" class="dropdown-link">Oceania</a></li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">SECTORS</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-link" data-sector="Infrastructure">Infrastructure</a></li>
+                        <li><a href="#" class="dropdown-link" data-sector="Renewable Energy">Renewable Energy</a></li>
+                        <li><a href="#" class="dropdown-link" data-sector="Manufacturing">Manufacturing</a></li>
+                        <li><a href="#" class="dropdown-link" data-sector="Technology">Technology</a></li>
+                        <li><a href="#" class="dropdown-link" data-sector="Healthcare">Healthcare</a></li>
+                        <li><a href="#" class="dropdown-link" data-sector="Agriculture">Agriculture</a></li>
+                        <li><a href="#" class="dropdown-link" data-sector="Tourism">Tourism</a></li>
+                        <li><a href="#" class="dropdown-link" data-sector="Logistics">Logistics</a></li>
+                    </ul>
+                </li>
+                <li><a href="#investors" class="nav-link">INVESTORS</a></li>
+                <li><a href="#promoters" class="nav-link">PROJECT PROMOTERS</a></li>
+                <li><a href="#resources" class="nav-link">RESOURCES</a></li>
+                <li><a href="#about" class="nav-link">ABOUT GIG</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-section">
+            <div class="container">
+                <a href="#" class="breadcrumb">Home</a>
+            </div>
+        </div>
+
+        <!-- Prototype Notice -->
+        <div class="prototype-notice">
+            <div class="container">
+                <strong>Prototype / Demonstration Portal:</strong> This website is a frontend demonstration. Investment opportunities, statistics and project information shown are illustrative unless otherwise stated. This is not an actual government website.
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container">
+                <h2>GLOBAL INVESTMENT GRID</h2>
+                <p class="hero-subtitle">Connecting Global Capital with Global Opportunities</p>
+                <p class="hero-description">Discover investment opportunities across countries, sectors and markets.</p>
+                
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search by project, country, sector or investment opportunity" aria-label="Search opportunities">
+                    <button class="btn-primary" id="search-btn">SEARCH</button>
+                </div>
+
+                <div class="popular-searches">
+                    <strong>Popular Searches:</strong>
+                    <div class="search-tags">
+                        <span class="search-tag" data-search="Renewable Energy">Renewable Energy</span>
+                        <span class="search-tag" data-search="Infrastructure">Infrastructure</span>
+                        <span class="search-tag" data-search="Manufacturing">Manufacturing</span>
+                        <span class="search-tag" data-search="Technology">Technology</span>
+                        <span class="search-tag" data-search="India">India</span>
+                        <span class="search-tag" data-search="UAE">UAE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access Section -->
+        <section class="quick-access-section">
+            <div class="container">
+                <h2>Explore the Global Investment Ecosystem</h2>
+                <div class="quick-access-grid">
+                    <div class="quick-access-card" id="explore-opportunities">
+                        <h3>Investment Opportunities</h3>
+                        <p>Discover projects seeking investment, partnerships and development support.</p>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="quick-access-card" id="explore-countries">
+                        <h3>Countries</h3>
+                        <p>Explore opportunities by country and region.</p>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="quick-access-card" id="explore-sectors">
+                        <h3>Sectors</h3>
+                        <p>Explore investment opportunities across major sectors.</p>
+                        <span class="arrow">→</span>
+                    </div>
+                    <div class="quick-access-card" id="explore-investors">
+                        <h3>Investor Connect</h3>
+                        <p>Connect investors with project promoters.</p>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats-section" id="gig-glance">
+            <div class="container">
+                <h2>GIG at a Glance</h2>
+                <p class="stats-note">Illustrative / Prototype Data</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">12+</div>
+                        <div class="stat-label">Sample Countries</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Investment Sectors</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Illustrative Opportunities</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">$500B+</div>
+                        <div class="stat-label">Illustrative Opportunity Value</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- World Map Section -->
+        <section class="world-map-section" id="world-map-section">
+            <div class="container">
+                <h2>Explore Global Investment Opportunities</h2>
+                <p class="map-description">Explore investment opportunities across countries and regions.</p>
+
+                <div class="map-container" id="map-container">
+                    <svg class="world-map" id="world-map" viewBox="40 86 543 274" xmlns="http://www.w3.org/2000/svg" role="group" aria-label="Interactive world map of investment opportunities">
+                        <!-- Map is generated by JavaScript from world-map-data.js -->
+                    </svg>
+                    <div class="map-tooltip" id="map-tooltip" role="tooltip"></div>
+                </div>
+
+                <p class="map-instruction">Hover over a country to explore. Click a country to view investment opportunities.</p>
+
+                <ul class="map-legend" aria-label="Map legend">
+                    <li><span class="legend-swatch swatch-available"></span>Available Investment Opportunities</li>
+                    <li><span class="legend-swatch swatch-hover"></span>Hover to Explore</li>
+                    <li><span class="legend-swatch swatch-selected"></span>Selected Country</li>
+                    <li><span class="legend-swatch swatch-nodata"></span>Listed &ndash; No Sample Projects Yet</li>
+                </ul>
+
+                <div class="map-info-panel" id="map-info" aria-live="polite">
+                    <div class="map-info-content">
+                        <h3 id="map-country-name">Hover over a country</h3>
+                        <p id="map-country-info">Click to explore opportunities</p>
+                    </div>
+                    <button type="button" class="btn-primary map-info-btn" id="map-info-btn" hidden>VIEW OPPORTUNITIES</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investment Opportunities Section -->
+        <section class="opportunities-section" id="opportunities">
+            <div class="container">
+                <h2>Investment Opportunities</h2>
+                <p>Explore projects across countries, sectors and investment categories.</p>
+
+                <!-- Filters -->
+                <div class="filters-section">
+                    <div class="filter-group">
+                        <label for="filter-country">Country</label>
+                        <select id="filter-country" class="filter-select">
+                            <option value="">All Countries</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-sector">Sector</label>
+                        <select id="filter-sector" class="filter-select">
+                            <option value="">All Sectors</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-size">Investment Size</label>
+                        <select id="filter-size" class="filter-select">
+                            <option value="">All Sizes</option>
+                            <option value="0-500">$0-500M</option>
+                            <option value="500-1000">$500M-1B</option>
+                            <option value="1000-5000">$1B-5B</option>
+                            <option value="5000+">$5B+</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-stage">Project Stage</label>
+                        <select id="filter-stage" class="filter-select">
+                            <option value="">All Stages</option>
+                            <option value="Planning">Planning</option>
+                            <option value="Development">Development</option>
+                            <option value="Implementation">Implementation</option>
+                            <option value="Operational">Operational</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-type">Opportunity Type</label>
+                        <select id="filter-type" class="filter-select">
+                            <option value="">All Types</option>
+                            <option value="Greenfield">Greenfield</option>
+                            <option value="Brownfield">Brownfield</option>
+                            <option value="PPP">PPP</option>
+                            <option value="Joint Venture">Joint Venture</option>
+                        </select>
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="btn-primary" id="apply-filters">APPLY FILTERS</button>
+                        <button class="btn-secondary" id="reset-filters">RESET</button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- For Investors Section -->
+        <section class="section-gray" id="investors">
+            <div class="container">
+                <h2>For Investors</h2>
+                <p class="section-intro">Discover investment opportunities across countries and sectors through a single platform.</p>
+                
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>DISCOVER</h3>
+                        <p>Search opportunities according to your preferences.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>EVALUATE</h3>
+                        <p>Review project information and investment requirements.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>CONNECT</h3>
+                        <p>Express interest and connect with project promoters.</p>
+                    </div>
+                </div>
+
+                <div class="section-button">
+                    <button class="btn-primary" id="explore-btn">EXPLORE OPPORTUNITIES</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Project Promoters Section -->
+        <section class="section-white" id="promoters">
+            <div class="container">
+                <h2>For Project Promoters</h2>
+                <p class="section-intro">Showcase investment-ready projects to a global investor audience.</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Submit a Project</h3>
+                        <p>Easily list your investment opportunities on the GIG platform.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Manage Project Information</h3>
+                        <p>Keep your project details current and up-to-date.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Receive Investor Interest</h3>
+                        <p>Connect directly with interested investors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Update Project Status</h3>
+                        <p>Track project progress and milestones.</p>
+                    </div>
+                </div>
+
+                <div class="section-button">
+                    <button class="btn-primary" id="promoter-register-btn">REGISTER AS PROJECT PROMOTER</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore by Country Section -->
+        <section class="section-gray" id="explore-countries-sec">
+            <div class="container">
+                <h2>Explore by Country</h2>
+                
+                <div class="regions-container">
+                    <div class="region">
+                        <h3>Asia</h3>
+                        <div class="countries-grid">
+                            <button class="country-btn" data-country="India">India</button>
+                            <button class="country-btn" data-country="United Arab Emirates">UAE</button>
+                            <button class="country-btn" data-country="Singapore">Singapore</button>
+                            <button class="country-btn" data-country="Vietnam">Vietnam</button>
+                            <button class="country-btn" data-country="Indonesia">Indonesia</button>
+                            <button class="country-btn" data-country="Japan">Japan</button>
+                        </div>
+                    </div>
+
+                    <div class="region">
+                        <h3>Europe</h3>
+                        <div class="countries-grid">
+                            <button class="country-btn" data-country="Germany">Germany</button>
+                            <button class="country-btn" data-country="France">France</button>
+                            <button class="country-btn" data-country="United Kingdom">United Kingdom</button>
+                        </div>
+                    </div>
+
+                    <div class="region">
+                        <h3>Middle East & Africa</h3>
+                        <div class="countries-grid">
+                            <button class="country-btn" data-country="Saudi Arabia">Saudi Arabia</button>
+                            <button class="country-btn" data-country="Kenya">Kenya</button>
+                            <button class="country-btn" data-country="South Africa">South Africa</button>
+                        </div>
+                    </div>
+
+                    <div class="region">
+                        <h3>Americas & Oceania</h3>
+                        <div class="countries-grid">
+                            <button class="country-btn" data-country="Australia">Australia</button>
+                            <button class="country-btn" data-country="Brazil">Brazil</button>
+                            <button class="country-btn" data-country="Canada">Canada</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore by Sector Section -->
+        <section class="section-white" id="explore-sectors-sec">
+            <div class="container">
+                <h2>Explore by Sector</h2>
+                
+                <div class="sectors-grid">
+                    <button class="sector-btn" data-sector="Infrastructure">Infrastructure</button>
+                    <button class="sector-btn" data-sector="Renewable Energy">Renewable Energy</button>
+                    <button class="sector-btn" data-sector="Manufacturing">Manufacturing</button>
+                    <button class="sector-btn" data-sector="Technology">Technology</button>
+                    <button class="sector-btn" data-sector="Healthcare">Healthcare</button>
+                    <button class="sector-btn" data-sector="Agriculture">Agriculture</button>
+                    <button class="sector-btn" data-sector="Tourism">Tourism</button>
+                    <button class="sector-btn" data-sector="Logistics">Logistics</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="section-gray" id="resources">
+            <div class="container">
+                <h2>Resources</h2>
+                
+                <div class="resources-grid">
+                    <div class="resource-group">
+                        <h3>Investment Guides</h3>
+                        <ul>
+                            <li><a href="#">Investment Guides</a></li>
+                            <li><a href="#">Country Investment Guides</a></li>
+                            <li><a href="#">Sector Reports</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-group">
+                        <h3>Policy & Overview</h3>
+                        <ul>
+                            <li><a href="#">Investment Policy Overview</a></li>
+                            <li><a href="#">Global Investment Trends</a></li>
+                            <li><a href="#">Infrastructure Reports</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-group">
+                        <h3>Useful Organizations</h3>
+                        <ul>
+                            <li><a href="#">Government Agencies</a></li>
+                            <li><a href="#">Investment Promotion Agencies</a></li>
+                            <li><a href="#">Development Institutions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Updates Section -->
+        <section class="section-white" id="news">
+            <div class="container">
+                <h2>News & Updates</h2>
+                
+                <div class="news-grid">
+                    <div class="news-item">
+                        <div class="news-date">Sept 24, 2026</div>
+                        <h3><a href="#">New renewable energy opportunities added to GIG</a></h3>
+                        <p>Five new solar and wind energy projects are now available for investor review.</p>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">Sept 20, 2026</div>
+                        <h3><a href="#">Global infrastructure investment opportunity report released</a></h3>
+                        <p>Latest trends and analysis on global infrastructure investment opportunities.</p>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-date">Sept 15, 2026</div>
+                        <h3><a href="#">New country investment profiles available</a></h3>
+                        <p>Comprehensive investment guides for three new countries added to the platform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About GIG Section -->
+        <section class="section-gray" id="about">
+            <div class="container">
+                <h2>About GIG</h2>
+                <div class="about-content">
+                    <p>The Global Investment Grid is a comprehensive platform designed to connect investors with investment opportunities across countries and sectors. Through a single, unified portal, investors can discover, evaluate and connect with promising projects worldwide.</p>
+                    <p><strong>Prototype / Demonstration Portal:</strong> This website is a frontend demonstration of the Global Investment Grid concept. All project data, statistics and information shown are illustrative and for demonstration purposes only.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>GLOBAL INVESTMENT GRID</h4>
+                <ul>
+                    <li><a href="#about">About GIG</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Government Agencies</a></li>
+                    <li><a href="#">Investment Promotion</a></li>
+                    <li><a href="#">Development Institutions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Global Investment Grid. Prototype / Demonstration Portal.</p>
+            <p>This website is a frontend demonstration. Investment opportunities, statistics and project information shown are illustrative unless otherwise stated.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Project Detail Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content modal-large">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div id="project-detail-content">
+                <!-- Project details will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Express Interest Modal -->
+    <div class="modal" id="interest-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2>Express Interest in Project</h2>
+            <form id="interest-form">
+                <div class="form-group">
+                    <label for="interest-name">Full Name *</label>
+                    <input type="text" id="interest-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-org">Organization *</label>
+                    <input type="text" id="interest-org" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-country">Country *</label>
+                    <input type="text" id="interest-country" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-email">Email *</label>
+                    <input type="email" id="interest-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-investment">Investment Interest *</label>
+                    <input type="text" id="interest-investment" placeholder="e.g., Equity, Debt, Partnership" required>
+                </div>
+                <div class="form-group">
+                    <label for="interest-message">Message</label>
+                    <textarea id="interest-message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">SUBMIT INTEREST</button>
+            </form>
+            <div id="interest-success" class="success-message" style="display:none;">
+                <p><strong>Thank you!</strong> Your expression of interest has been recorded in this demonstration portal.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Investor Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2>Investor Login</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn-primary">LOGIN</button>
+            </form>
+            <p class="form-note">Note: This is a frontend demonstration. No actual authentication.</p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2>Investor Registration</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Full Name *</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Email *</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-org">Organization *</label>
+                    <input type="text" id="register-org" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-country">Country *</label>
+                    <input type="text" id="register-country" required>
+                </div>
+                <button type="submit" class="btn-primary">REGISTER</button>
+            </form>
+            <p class="form-note">Note: This is a frontend demonstration. No actual registration.</p>
+        </div>
+    </div>
+
+    <!-- Project Promoter Registration Modal -->
+    <div class="modal" id="promoter-modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <h2>Register as Project Promoter</h2>
+            <form id="promoter-form">
+                <div class="form-group">
+                    <label for="promoter-name">Organization Name *</label>
+                    <input type="text" id="promoter-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="promoter-contact">Contact Person *</label>
+                    <input type="text" id="promoter-contact" required>
+                </div>
+                <div class="form-group">
+                    <label for="promoter-email">Email *</label>
+                    <input type="email" id="promoter-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="promoter-country">Country *</label>
+                    <input type="text" id="promoter-country" required>
+                </div>
+                <button type="submit" class="btn-primary">REGISTER</button>
+            </form>
+            <p class="form-note">Note: This is a frontend demonstration. No actual registration.</p>
+        </div>
+    </div>
+
+    <script src="world-map-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
